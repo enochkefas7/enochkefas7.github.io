@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #989989;
+        }
+
+        ul{
+        list-style-type:none;
+        margin: 0px;
+        padding: 0px;
+        
+        
+    }
+body{
+    background-color: #989989;
+    
+}
+    li{
+        display:inline-block;
+        background-color: #989989;
+        
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        background-color: #909090 ;
+        height: 30px;
+        padding: 14px 16px;
+    }
+    .dropdown{
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        
+    }
+    .dropdown-content a{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: blue;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        z-index: 1;
+    }
+    
+    
+    li a:hover{
+        color: whitesmoke;
+        background-color: brown;
+    }
+    li a.active{
+        background-color: aqua;
+    }
+    .btn{
+        border-radius: 10px ;
+        border-color: blue;
+    }
+    </style>
+</head>
+<body>
+
+
+    <ul>
+        <li><a href="todayswork.html">Home</a></li>
+        <li class="dropdown"><a href="#news" class="dropbtn">News</a>
+            <div class="dropdown-content">
+                <a href="sportnews.html">sport</a>
+                <a href="policalnews.html">politics</a>
+                <a href="economy.html">economy</a>
+                <a href="weather.html">weather</a>
+            
+            
+            </div></li>
+        <li><a href="Contacts.html">Contact-us</a></li>
+        <li style="float: right;"><a href="Login.html">Login</a></li>
+        <li style="float: right;"><a href="Sign-up.html" class="active">Sign-up</a></li>
+    </ul>
+    <form><fieldset>
+        <legend>Sign-up Details</legend><br>
+        <label for="firstname">First Name</label><br>
+        <input type="text" id="firstname" name="firstname"style="width: 260px;" placeholder="enter first name" required><br>
+        <label for="register_lastname" class="label">Last Name</label><br>
+        <input type="text" id="register_lastname" style="width: 260px;" placeholder="enter last name" required><br>
+        <label for="register_phonenumber" class="label">Phone Number</label><br>
+        <input type="number" id="register_phonenumber" style="width: 260px;" placeholder="enter phone number" required min="8"><br>
+        <label for="register_email" class="label">Email</label><br>
+        <input type="email" id="register_email" style="width: 260px;" placeholder="enter email" required><br>
+        <label for="date">Enter your Date of birth:</label><br>
+        <input type="date" id="date" max="01/01/2023"><br>
+        <label for="Gender">Enter Gender:</label><br>
+        <input type="radio" id="gender" name="gender" value="male"/>Male<br>
+        <input type="radio" id="gender" name="gender" value="female"/>Female<br>
+        <input type="radio" id="gender" name="gender" value="others"/>Others<br>
+        <button class="btn">submit</button>
+    
+
+    
+
+
+
+
+
+    </fieldset></form>
+</body>
+</html>
