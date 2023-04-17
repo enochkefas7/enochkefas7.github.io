@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #989989;
+        }
+
+        ul{
+        list-style-type:none;
+        margin: 0px;
+        padding: 0px;   
+    }
+    .log{
+        border-radius: 10px;
+        border-color: blue;
+    }
+body{
+    background-color: #989989;
+    
+}
+    li{
+        display:inline-block;
+        background-color: #989989;
+        
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        background-color: #909090 ;
+        height: 30px;
+        padding: 14px 16px;
+    }
+    .dropdown{
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        
+    }
+    .dropdown-content a{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: blue;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        z-index: 1;
+    }
+    
+    
+    li a:hover{
+        color: whitesmoke;
+        background-color: brown;
+    }
+    li a.active{
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="todayswork.html">Home</a></li>
+        <li class="dropdown"><a href="#news" class="dropbtn">News</a>
+            <div class="dropdown-content">
+                <a href="sportnews.html">sport</a>
+                <a href="policalnews.html">politics</a>
+                <a href="economy.html">economy</a>
+                <a href="weather.html">weather</a>
+            
+            
+            </div></li>
+        <li><a href="Contacts.html">Contact-us</a></li>
+        <li style="float: right;"><a href="Login.html" class="active">Login</a></li>
+        <li style="float: right;"><a href="Sign-up.html">Sign-up</a></li>
+    </ul>
+   
+   
+    <div style="text-align: center;"><form>
+       <fieldset><legend>user detials:</legend>
+    <label for="username" class="label">username:</label><br>
+    <input type="text" id="username" style="width: 200px;" placeholder="username" required><br>
+    <label for="password" class="label">Password:</label><br>
+    <input type="text" id="password" style="width: 200px;" placeholder="password" required min="5"><br>
+    <label for="reconfirm_password" class="label">Reconfirm Password:</label><br>
+    <input type="text" id="reconfirm_password" style="width: 200px;" placeholder="reconfirm password" required><br>
+    <br><button class="log">Login</button>
+</form></fieldset></div>
+
+
+
+</body>
+</html>
