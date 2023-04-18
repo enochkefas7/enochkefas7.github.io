@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    ul{
+        list-style-type:none;
+        margin: 0px;
+        padding: 0px;
+        
+        
+    }
+body{
+    background-color: #989989;
+    
+}
+    li{
+        display:inline-block;
+        background-color: #989989;
+        
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        background-color: #909090 ;
+        height: 30px;
+        padding: 14px 16px;
+    }
+    .dropdown{
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        
+    }
+    .dropdown-content a{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: blue;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        z-index: 1;
+    }
+    
+    
+    li a:hover{
+        color: whitesmoke;
+        background-color: brown;
+    }
+    li a.active{
+        background-color: aqua;
+    }
+    
+    
+    
+    .mid{
+        height: 600px;
+        text-align: center;
+        font-size: x-large;
+        color: blue;
+        border: 2px solid;
+        background-image: url(html/background.webp);
+        
+    }
+    
+  </style>  
+</head>
+<body>
+    <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li class="dropdown"><a href="#news" class="dropbtn">News</a>
+            <div class="dropdown-content">
+                <a href="sportnews.html">sport</a>
+                <a href="policalnews.html">politics</a>
+                <a href="economy.html">economy</a>
+                <a href="weather.html">weather</a>
+            
+            
+            </div></li>
+        <li><a href="Contacts.html">Contact-us</a></li>
+        <li style="float: right;"><a href="Login.html">Login</a></li>
+        <li style="float: right;"><a href="Sign-up.html">Sign-up</a></li>
+    </ul>
+
+        
+<div class="mid">
+<p>Welcome to Keenjayama News.</p>
+<marquee>We Give you the best News and Update.</marquee>
+
+
+
+</div>
+
+
+
+  
+</body>
+</html>
