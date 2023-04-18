@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    body{
+        background-color: #989989;
+    }
+    ul{
+        list-style-type:none;
+        margin: 0px;
+        padding: 0px;
+        
+        
+    }
+body{
+    background-color: #989989;
+    
+}
+    li{
+        display:inline-block;
+        background-color: #989989;
+        
+    }
+    li a{
+        text-decoration: none;
+        display: block;
+        background-color: #909090 ;
+        height: 30px;
+        padding: 14px 16px;
+    }
+    .dropdown{
+    position: relative;
+    display: inline-block;
+    }
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        
+    }
+    .dropdown-content a{
+        display: block;
+    }
+    .dropdown-content a:hover{
+        background-color: blue;
+    }
+    .dropdown:hover .dropdown-content{
+        display: block;
+        z-index: 1;
+    }
+    
+    
+    li a:hover{
+        color: whitesmoke;
+        background-color: brown;
+    }
+    li a.active{
+        background-color: aqua;
+    }
+    
+   </style>
+</head>
+<body>
+    <ul>
+        <li><a href="todayswork.html">Home</a></li>
+        <li class="dropdown"><a href="#news" class="dropbtn">News</a>
+            <div class="dropdown-content">
+                <a href="sportnews.html">sport</a>
+                <a href="policalnews.html">politics</a>
+                <a href="economy.html">economy</a>
+                <a href="weather.html">weather</a>
+            
+            
+            </div></li>
+        <li><a href="Contacts.html" class="active">Contact-us</a></li>
+        <li style="float: right;"><a href="Login.html">Login</a></li>
+        <li style="float: right;"><a href="Sign-up.html">Sign-up</a></li>
+    </ul>
+    <form><fieldset>
+        <legend>Contact Us</legend><br>
+        <label for="fullname">Enter full name:</label><br>
+        <input type="text" id="fullname" style="width: 160px;" required><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" style="width: 160px;" requireCd><br>
+        <label for="phoneNum">Enter phone number:</label><br>
+        <input type="number" id="phoneNum" style="width: 160px;" required><br>
+        <textarea name="message" rows="20" cols="40" placeholder="Thanks for contacting us, How can we be of help."></textarea><br>
+        <input type="submit" value="submit">
+    </fieldset></form>
+    <iframe scrolling="no" marginheight="0" marginwidth="0" id="gmap_canvas" src="https://maps.google.com/maps?width=520&amp;height=436&amp;hl=en&amp;q=osla%20phase%202,%20Gwagwalada%20gwagwalada+(Map%20to%20my%20Company)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="520" height="436" frameborder="0"></iframe><a href='https://maps-generator.com/'>Maps Generator</a>
+
+
+</body>
+</html>
